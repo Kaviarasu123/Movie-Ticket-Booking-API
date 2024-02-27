@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+<h1>delete user</h1>
+<form th:action="@{/demo/delete/useridd}" method="get">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" name="userId">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

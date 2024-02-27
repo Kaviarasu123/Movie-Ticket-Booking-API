@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+<h1>Create Password</h1>
+<form th:action="@{passreset}" method="post">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <label for="password">Old Password:</label>
+    <input type="password" id="password" name="password">
+    <label for="newpassword">New Password</label>
+    <input for="newpassword" id="newpassword" name="newpassword">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
